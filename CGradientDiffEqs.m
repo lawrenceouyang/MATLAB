@@ -12,7 +12,7 @@ function [u] = CGradientDiffEqs(q_xy, r_xy, N, TOL)
 h = 1/N;
 
 % Initialize u, w, q, b, r, p, matrix for the iteration
-% Initialize error vector and gamma
+% Initialize relative residual vector and gamma
 u = zeros(N-1); 
 w = zeros(N-1); q = w; b = q; r = b;
 err = zeros(N-1,1);
@@ -24,23 +24,25 @@ for i = 1:(N-1)
     end
 end
 
+%Initialize r = b - Au_0, where A is the operation v = -u_xx - u_yy +
+    %h^2q(i,j)u(i,j)
 for i = 1:(N-1)
     for j = 1:(N-1)
         % Consider boundary conditions
         switch i
             case 1
-                u_xx = -2*u(i,j) + u(i+1,j);
+                u_xx = -2*u(i,j) + u(i+1,j); % u(0,j) = 0
             case (N-1)
-                u_xx = u(i-1,j) - 2*u(i,j);
+                u_xx = u(i-1,j) - 2*u(i,j); % u(N,j) = 0
             otherwise
                 u_xx = u(i-1,j) - 2*u(i,j) + u(i+1,j);
         end
         
         switch j
             case 1
-                u_yy = -2*u(i,j) + u(i,j+1);
+                u_yy = -2*u(i,j) + u(i,j+1); % u(i,0) = 0
             case (N-1)
-                u_yy = u(i,j-1) - 2*u(i,j);
+                u_yy = u(i,j-1) - 2*u(i,j); % u(i,N) = 0
             otherwise
                 u_yy = u(i,j-1) - 2*u(i,j) + u(i,j+1);
         end
@@ -52,28 +54,29 @@ end
 p = r;
 gamma = sum(sum(r.*r));
 ip_bb = sum(sum(b.*b));
-a = 0;
-ip_pw = 0;
 
 %Begin the algorithm
 for k = 1:(N-1)
     
+    %Solve w = Ap_k, where A is the operation w = -p_xx - p_yy +
+    %h^2q(i,j)p(i,j)
     for i = 1:(N-1)
         for j = 1:(N-1)
             % Consider boundary conditions
             switch i
                 case 1
-                    p_xx = -2*p(i,j) + p(i+1,j);
+                    p_xx = -2*p(i,j) + p(i+1,j); % p(0,j) = 0
                 case (N-1)
-                    p_xx = p(i-1,j) - 2*p(i,j);
+                    p_xx = p(i-1,j) - 2*p(i,j); % p(N,j) = 0
                 otherwise
                     p_xx = p(i-1,j) - 2*p(i,j) + p(i+1,j);
             end
+            % Consider boundary conditions
             switch j
                 case 1
-                    p_yy = -2*p(i,j) + p(i,j+1);
+                    p_yy = -2*p(i,j) + p(i,j+1); % p(i,0) = 0
                 case (N-1)
-                    p_yy = p(i,j-1) - 2*p(i,j);
+                    p_yy = p(i,j-1) - 2*p(i,j); % p(i,N) = 0
                 otherwise
                     p_yy = p(i,j-1) - 2*p(i,j) + p(i,j+1);
             end
@@ -81,19 +84,18 @@ for k = 1:(N-1)
             w(i,j) = -p_xx - p_yy + h^2*q(i,j)*p(i,j);
         end
     end
-    
+    % solve for a_k
     ip_pw = sum(sum(p.*w));
     a = gamma/ip_pw;
+    
+    % update u,r,p and gamma
     u = u + a*p;
     r = r - a*w;
-    newGamma = 0;
-    for i = 1:(N-1)
-        for j = 1:(N-1)
-            newGamma = newGamma + r(i,j)^2;
-        end
-    end
+    newGamma = sum(sum(r.*r));
     p = r + (newGamma/gamma)*p;
     gamma = newGamma;
+    
+    % check if relative residual is less than threshold
     err(k) = sqrt(gamma/ip_bb);
     if err(k) < TOL
         fprintf('Solution successfully found after %d iterations.', k);
@@ -103,6 +105,6 @@ for k = 1:(N-1)
     end
 end
 loglog(err);
-error('Failed to obtain solution after %d iterations.', sqrt(gamma/ip_bb));
+error('Failed to obtain solution after %d iterations.', k);
 end
 

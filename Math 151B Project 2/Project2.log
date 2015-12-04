@@ -1,7 +1,7 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.2)  1 DEC 2015 18:24
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.5.2)  1 DEC 2015 19:07
 entering extended mode
-**Project1.tex
-("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 1\Project1.tex"
+**Project2.tex
+("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 2\Project2.tex"
 LaTeX2e <2011/06/27>
 Babel <v3.8m> and hyphenation patterns for english, afrikaans, ancientgreek, ar
 abic, armenian, assamese, basque, bengali, bokmal, bulgarian, catalan, coptic, 
@@ -248,6 +248,14 @@ Package: mathscinet 2002/04/17 v1.05
 \alpha@suffix=\count119
 \series@index=\count120
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\array.sty"
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen128
+\extrarowheight=\dimen129
+\NC@list=\toks23
+\extratabsurround=\skip48
+\backup@length=\skip49
+)
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.sty"
 Package: geometry 2010/09/12 v5.6 Page Geometry
 
@@ -265,44 +273,44 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@cnth=\count121
 \Gm@cntv=\count122
 \c@Gm@tempcnt=\count123
-\Gm@bindingoffset=\dimen128
-\Gm@wd@mp=\dimen129
-\Gm@odd@mp=\dimen130
-\Gm@even@mp=\dimen131
-\Gm@layoutwidth=\dimen132
-\Gm@layoutheight=\dimen133
-\Gm@layouthoffset=\dimen134
-\Gm@layoutvoffset=\dimen135
-\Gm@dimlist=\toks23
+\Gm@bindingoffset=\dimen130
+\Gm@wd@mp=\dimen131
+\Gm@odd@mp=\dimen132
+\Gm@even@mp=\dimen133
+\Gm@layoutwidth=\dimen134
+\Gm@layoutheight=\dimen135
+\Gm@layouthoffset=\dimen136
+\Gm@layoutvoffset=\dimen137
+\Gm@dimlist=\toks24
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\geometry\geometry.cfg"))
-("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 1\Project1.aux")
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 42.
-LaTeX Font Info:    ... okay on input line 42.
+("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 2\Project2.aux")
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 41.
+LaTeX Font Info:    ... okay on input line 41.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count124
-\scratchdimen=\dimen136
+\scratchdimen=\dimen138
 \scratchbox=\box56
 \nofMPsegments=\count125
 \nofMParguments=\count126
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks25
 \MPscratchCnt=\count127
-\MPscratchDim=\dimen137
+\MPscratchDim=\dimen139
 \MPnumerator=\count128
 \makeMPintoPDFobject=\count129
-\everyMPtoPDFconversion=\toks25
+\everyMPtoPDFconversion=\toks26
 )
 \c@lstlisting=\count130
 
@@ -340,98 +348,96 @@ LaTeX Font Info:    ... okay on input line 42.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 43.
+LaTeX Font Info:    Try loading font information for U+msa on input line 42.
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 43.
+LaTeX Font Info:    Try loading font information for U+msb on input line 42.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 47.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 46.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\omscmr.fd"
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 47.
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 59--60
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 65--66
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 71--72
-
- []
-
-[1
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 46.
+ [1
 
 {C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}]
-<Plots.jpg, id=14, 956.57375pt x 693.59125pt>
-File: Plots.jpg Graphic file (type jpg)
- <use Plots.jpg>
-Package pdftex.def Info: Plots.jpg used on input line 76.
-(pdftex.def)             Requested size: 573.94868pt x 416.15796pt.
+<logplotN-32.jpg, id=13, 1204.5pt x 903.375pt>
+File: logplotN-32.jpg Graphic file (type jpg)
+ <use logplotN-32.jpg>
+Package pdftex.def Info: logplotN-32.jpg used on input line 75.
+(pdftex.def)             Requested size: 421.58131pt x 316.18599pt.
 
-Overfull \hbox (39.32138pt too wide) in paragraph at lines 76--77
- [] 
+<logplotN-64.jpg, id=14, 1204.5pt x 903.375pt>
+File: logplotN-64.jpg Graphic file (type jpg)
+ <use logplotN-64.jpg>
+Package pdftex.def Info: logplotN-64.jpg used on input line 76.
+(pdftex.def)             Requested size: 421.58131pt x 316.18599pt.
+
+<logplotN-128.jpg, id=15, 1204.5pt x 903.375pt>
+File: logplotN-128.jpg Graphic file (type jpg)
+ <use logplotN-128.jpg>
+Package pdftex.def Info: logplotN-128.jpg used on input line 77.
+(pdftex.def)             Requested size: 421.58131pt x 316.18599pt.
+
+<logplotN-256.jpg, id=16, 1204.5pt x 903.375pt>
+File: logplotN-256.jpg Graphic file (type jpg)
+ <use logplotN-256.jpg>
+Package pdftex.def Info: logplotN-256.jpg used on input line 78.
+(pdftex.def)             Requested size: 421.58131pt x 316.18599pt.
+
+<logplotN-512.jpg, id=17, 1204.5pt x 903.375pt>
+File: logplotN-512.jpg Graphic file (type jpg)
+ <use logplotN-512.jpg>
+Package pdftex.def Info: logplotN-512.jpg used on input line 79.
+(pdftex.def)             Requested size: 421.58131pt x 316.18599pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 74--81
+
  []
 
-[2 <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 1/Plots.jpg>]
-[3] ("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 1\Project1.aux")
- ) 
+[2 <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-32.jpg>
+ <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-64.jpg>]
+[3 <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-128.jpg
+> <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-256.jpg>
+] [4 <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-512.j
+pg>] <logplotN-k.jpg, id=27, 1204.5pt x 903.375pt>
+File: logplotN-k.jpg Graphic file (type jpg)
+ <use logplotN-k.jpg>
+Package pdftex.def Info: logplotN-k.jpg used on input line 93.
+(pdftex.def)             Requested size: 542.02pt x 406.515pt.
+
+Overfull \hbox (7.3927pt too wide) in paragraph at lines 92--94
+[] 
+ []
+
+[5 <C:/Users/Atranemus-PC/Documents/MATLAB/Math 151B Project 2/logplotN-k.jpg>]
+("C:\Users\Atranemus-PC\Documents\MATLAB\Math 151B Project 2\Project2.aux") ) 
 Here is how much of TeX's memory you used:
- 4886 strings out of 493921
- 65083 string characters out of 3147262
- 144679 words of memory out of 3000000
- 8114 multiletter control sequences out of 15000+200000
+ 4954 strings out of 493921
+ 66105 string characters out of 3147262
+ 143368 words of memory out of 3000000
+ 8176 multiletter control sequences out of 15000+200000
  12136 words of font info for 47 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
- 27i,8n,40p,332b,228s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Pr
-ogram Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Fi
-les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Program Files/MiKTe
-X 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.9/fon
-ts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/
-public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/
-cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
-b><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pfb>
-Output written on Project1.pdf (3 pages, 152653 bytes).
+ 27i,7n,40p,303b,219s stack positions out of 5000i,500n,10000p,200000b,50000s
+<C
+:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Progra
+m Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Program Files/
+MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Program Files/MiKTeX 2.
+9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program Files/MiKTeX 2.9/fonts/t
+ype1/public/amsfonts/cm/cmr17.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/publ
+ic/amsfonts/cm/cmr8.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfont
+s/cm/cmsy10.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmt
+i12.pfb>
+Output written on Project2.pdf (5 pages, 361190 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
+ 56 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 6 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
